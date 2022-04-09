@@ -3,8 +3,8 @@
  */
 
 // import formHandler from '../js/formHandler';
-const formHandler = require('../js/formHandler');
+import formHandler from '../js/formHandler';
 
-test("formHandler is defined", () => {
+test('formHandler is defined', () => {
     expect(formHandler).toBeDefined();
 });
