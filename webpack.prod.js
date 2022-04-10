@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const Dotenv = require('dotenv-webpack')
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const WorkboxPlugin = require('workbox-webpack-plugin');
+
 
 module.exports = {
     mode: "production",
@@ -50,6 +52,7 @@ module.exports = {
         ),
         new MiniCssExtractPlugin(
 
-        )
+        ),
+        new WorkboxPlugin.GenerateSW()
     ]
 }
