@@ -31,7 +31,8 @@ The main focus of this project is to provide a functioning Webpack 5 bundler con
 After dependencies have been installed, the following steps are required to get the project up and running:
 
 Dev Mode:
->  Run `npm run dev` to start the development server
+>  Run `npm run dev` to start the development mode
+>  Run 'npm serve' to start the node express server in a separate console
 
 Prod Build:
 >  Run `npm run build` to start the production build
