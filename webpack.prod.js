@@ -13,7 +13,7 @@ module.exports = {
     output: {
         libraryTarget: 'var',
         library: "$",
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
     },
     module: {
         rules: [
