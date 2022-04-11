@@ -32,6 +32,7 @@ After dependencies have been installed, the following steps are required to get 
 
 Dev Mode:
 >  Run `npm run dev` to start the development server
+>  Run `npm serve` in a second console to start the node express server
 
 Prod Build:
 >  Run `npm run build` to start the production build
@@ -40,7 +41,7 @@ Test:
 >  Run `npm test` to run the unit tests
 
 Run the App:
->  Run 'npm start' to start the application
+>  Run `npm start` to start the application
 
 
 ## 1.5. Links
