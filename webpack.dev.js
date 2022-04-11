@@ -2,6 +2,7 @@ const path = require("path")
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const Dotenv = require('dotenv-webpack')
+const GenerateSW = require('workbox-webpack-plugin')
 
 module.exports = {
     mode: "development",
@@ -14,10 +15,10 @@ module.exports = {
     },
     devServer: {
         compress: true,
-        proxy: {
-            '/api': 'http://localhost:3000/api'
-        },
-        port: 3000
+        // proxy: {
+        //     '/api': 'http://localhost:3000/api'
+        // },
+        port: 8081
     },
     devtool: 'eval',
     module: {
@@ -49,5 +50,8 @@ module.exports = {
         new Dotenv(
 
         ),
+        new GenerateSW({
+            swDest: './service-worker.js'
+        })
     ]
 }
