@@ -2,7 +2,7 @@ const path = require("path")
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const Dotenv = require('dotenv-webpack')
-const GenerateSW = require('workbox-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
     mode: "development",
@@ -50,7 +50,7 @@ module.exports = {
         new Dotenv(
 
         ),
-        new GenerateSW({
+        new WorkboxPlugin.GenerateSW({
             swDest: './service-worker.js'
         })
     ]
