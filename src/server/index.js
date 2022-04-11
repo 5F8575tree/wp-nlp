@@ -27,10 +27,10 @@ app.get('/*', (req, res) => {
     res.sendFile(path.resolve("dist", "index.html"));
 })
 
-//we need a GET route to allow the API_KEY to be used in development mode
-app.get('/api', (req, res) => {
-    res.send(apiKey);
-})
+//we need a GET route to allow the API_KEY for reference
+// app.get('/api', (req, res) => {
+//     res.send(apiKey);
+// })
 
 //create a route that handles the post request for the new URL that comes from the form
 app.post('/api', (req, res) => {

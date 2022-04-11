@@ -9,15 +9,11 @@ module.exports = {
     output: {
         libraryTarget: 'var',
         library: "$",
-        path: path.resolve(__dirname, 'dist'),
-        publicPath: '/',
     },
     devServer: {
         compress: true,
-        proxy: {
-            '/api': 'http://localhost:3000/api'
-        },
-        port: 3000
+        hot: false,
+        port: 9000
     },
     devtool: 'eval',
     module: {
